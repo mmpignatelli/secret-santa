@@ -49,6 +49,9 @@ export default async function WishlistPage({ params }: { params: Promise<Params>
         <h1 className="mt-2 font-[family-name:var(--font-display)] text-3xl text-[var(--santa-red)]">
           {name}&apos;s Christmas Wishlist
         </h1>
+        <p className="mt-3 inline-flex items-center gap-2 rounded-full bg-[var(--pine-green)]/10 px-4 py-2 text-sm font-medium text-[var(--pine-green)]">
+          🧝 Budget reminder from the elves: please keep gifts to <strong>€30 or under</strong>.
+        </p>
 
         {!items || items.length === 0 ? (
           <p className="mt-6 rounded-xl border border-dashed border-red-200 bg-red-50/40 p-6 text-center text-neutral-600">

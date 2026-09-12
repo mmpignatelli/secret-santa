@@ -33,6 +33,9 @@ export default async function WishlistsIndexPage() {
           Everyone&apos;s gift ideas, out in the open. No secret word needed to browse — only to
           edit your own.
         </p>
+        <p className="mt-4 inline-flex items-center gap-2 rounded-full bg-[var(--pine-green)]/10 px-4 py-2 text-sm font-medium text-[var(--pine-green)]">
+          🧝 Budget reminder from the elves: please keep gifts to <strong>€30 or under</strong>.
+        </p>
       </div>
       <div className="mx-auto mt-8 grid max-w-2xl gap-3 sm:grid-cols-2">
         {PARTICIPANTS.map((name) => (
