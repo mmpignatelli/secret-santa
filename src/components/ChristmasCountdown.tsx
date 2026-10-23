@@ -37,7 +37,7 @@ export default function ChristmasCountdown() {
         ];
 
   return (
-    <div className="mt-8" aria-live="off">
+    <div aria-live="off">
       <p className="text-sm uppercase tracking-wide text-red-50/90">🎄 Countdown to Christmas</p>
       <div className="mx-auto mt-3 grid max-w-sm grid-cols-4 gap-2">
         {parts.map(([label, value]) => (

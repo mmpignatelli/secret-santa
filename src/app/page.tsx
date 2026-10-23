@@ -27,7 +27,9 @@ export default async function HomePage() {
       <section className="relative overflow-hidden bg-gradient-to-b from-[var(--santa-red)] to-[var(--santa-red-dark)] px-4 py-16 text-center text-white sm:py-24">
         <Snowfall />
         <div className="relative mx-auto max-w-2xl">
-          <p className="gentle-bounce text-5xl">🎅🤶🧝</p>
+          <ChristmasCountdown />
+
+          <p className="gentle-bounce mt-10 text-5xl">🎅🤶🧝</p>
           <h1 className="mt-4 font-[family-name:var(--font-display)] text-4xl sm:text-6xl">
             Marques Family Secret Santa
           </h1>
@@ -35,8 +37,6 @@ export default async function HomePage() {
             Santa had the big idea. Mrs Claus is making sure it actually happens.
             The elves are handling absolutely everything in between.
           </p>
-
-          <ChristmasCountdown />
 
           {completed ? (
             <div className="mt-8 rounded-2xl bg-white/10 p-6 backdrop-blur-sm ring-1 ring-white/20">
