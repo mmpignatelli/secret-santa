@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Snowfall from "@/components/Snowfall";
+import ChristmasCountdown from "@/components/ChristmasCountdown";
 import { getSupabaseAdmin } from "@/lib/supabaseAdmin";
 import { PARTICIPANTS } from "@/lib/participants";
 import type { DrawStateRow, ParticipantRow } from "@/lib/types";
@@ -34,6 +35,8 @@ export default async function HomePage() {
             Santa had the big idea. Mrs Claus is making sure it actually happens.
             The elves are handling absolutely everything in between.
           </p>
+
+          <ChristmasCountdown />
 
           {completed ? (
             <div className="mt-8 rounded-2xl bg-white/10 p-6 backdrop-blur-sm ring-1 ring-white/20">
